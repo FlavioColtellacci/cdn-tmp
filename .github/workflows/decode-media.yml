@@ -1,0 +1,15 @@
+name: Decode media
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - staging/**
+permissions:
+  contents: write
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode and commit
+        run: python3 staging/decode.py

@@ -1,2 +1,3 @@
-# cdn-tmp
-Scratch asset host.
+# assets
+
+Scratch media host. Ephemeral files only.
