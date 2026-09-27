@@ -13,3 +13,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Decode and commit
         run: python3 staging/decode.py
+        # decode.py soft-exits on incomplete/bad staging so Actions
+        # does not email workflow-failure noise to the repo owner.
